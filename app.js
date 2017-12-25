@@ -6,6 +6,7 @@ var server = app.listen(3000, function(){
 });
 
 app.set('view engine', 'ejs');
+app.set('views', __dirname + '/views');
 
 app.get("/", function(req, res, next){
     res.render("index", {})

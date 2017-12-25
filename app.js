@@ -5,9 +5,8 @@ var server = app.listen(3000, function(){
     console.log("Server lisning on PORT: " + server.address().port);
 });
 
-app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views');
-
+app.set('view engine', 'ejs');
 app.get("/", function(req, res, next){
     res.render("index", {})
 });
